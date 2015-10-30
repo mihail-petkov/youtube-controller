@@ -1,0 +1,23 @@
+.header {
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+}
+.commands {
+  width: 200px;
+  margin: 10px;
+  font-size: 13px;
+}
+.title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+div.title:not(:first-child) {
+  border-top: 1px solid #ccc;  
+}
+.command {
+  margin-left: 10px;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "YouTube controller",
+  "short_name": "YouTube controller",
+  "description": "Start next or previous YouTube song or just start/stop the current one from the playlist with keyboard command",
+  "version": "1.2",
+  "manifest_version": 2,
+  "permissions": [ 
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  },
+  "background": {
+    "scripts": ["plugin.js"],
+    "persistent": true
+  },
+  "commands": {
+    "next-song" : {
+      "suggested_key": {
+        "default": "Ctrl+K",
+        "windows": "Ctrl+N",
+        "mac": "Command+K",
+        "linux": "Ctrl+K"
+      },
+      "description": "Start next YouTube video."
+    },
+    "previous-song" : {
+      "suggested_key": {
+        "default": "Ctrl+J",
+        "windows": "Ctrl+P",
+        "mac": "Command+J",
+        "linux": "Ctrl+J"
+      },
+      "description": "Start previous YouTube video."
+    },
+    "play" : {
+      "suggested_key": {
+        "default": "Ctrl+I",
+        "windows": "Ctrl+I",
+        "mac": "Command+I",
+        "linux": "Ctrl+I"
+      },
+      "description": "Start/stop current YouTube video."
+    }
+  }
+}
